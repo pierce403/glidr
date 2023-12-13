@@ -2,13 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
+    animation: moveGlider 4s linear infinite; /* Animation for moving the container */
 }
 
 .glider {
     position: absolute;
     opacity: 0; /* Start invisible */
-    animation: glideSequence 4s infinite; /* Animate over 4 seconds, repeat infinitely */
+    animation: glideSequence 4s linear infinite; /* Animation for glider state changes */
 }
 
 @keyframes glideSequence {
@@ -21,13 +22,22 @@
 }
 
 #glider2 {
-    animation-delay: 1s; /* Delays the start of animation for the second SVG */
+    animation-delay: 1s; /* Delay for the second SVG */
 }
 
 #glider3 {
-    animation-delay: 2s; /* Delays for the third SVG */
+    animation-delay: 2s; /* Delay for the third SVG */
 }
 
 #glider4 {
-    animation-delay: 3s; /* Delays for the fourth SVG */
+    animation-delay: 3s; /* Delay for the fourth SVG */
+}
+
+@keyframes moveGlider {
+    0% {
+        transform: translate(2.5vh, -2.5vh); /* Starting position */
+    }
+    100% {
+        transform: translate(0vh, 0vh); /* End position after 4 seconds */
+    }
 }
