@@ -3,18 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>glidr.org</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <title>Conway's Game of Life Glider</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking the CSS file -->
 </head>
-<body>
+<body style="background-color: black;">
     <div id="glider-container">
-        <svg width="100px" height="100px" viewBox="0 0 4 4" xmlns="http://www.w3.org/2000/svg">
-        <rect x="1" y="0" width="1" height="1" fill="black"/>
-        <rect x="2" y="1" width="1" height="1" fill="black"/>
-        <rect x="0" y="2" width="1" height="1" fill="black"/>
-        <rect x="1" y="2" width="1" height="1" fill="black"/>
-        <rect x="2" y="2" width="1" height="1" fill="black"/>
-      </svg>
+        <!-- State 1 of the glider -->
+        <svg id="glider1" class="glider" width="100px" height="100px" viewBox="0 0 4 4" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="2" width="1" height="1" fill="lightgreen"/>
+            <rect x="1" y="1" width="1" height="1" fill="green"/>
+            <rect x="2" y="1" width="1" height="1" fill="lightgreen"/>
+            <rect x="2" y="2" width="1" height="1" fill="green"/>
+            <rect x="2" y="3" width="1" height="1" fill="green"/>
+        </svg>
+        <!-- State 2 of the glider -->
+        <svg id="glider2" class="glider" width="100px" height="100px" viewBox="0 0 4 4" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="1" height="1" fill="green"/>
+            <rect x="1" y="3" width="1" height="1" fill="lightgreen"/>
+            <rect x="2" y="1" width="1" height="1" fill="green"/>
+            <rect x="2" y="2" width="1" height="1" fill="green"/>
+            <rect x="3" y="2" width="1" height="1" fill="lightgreen"/>
+        </svg>
+        <!-- State 3 of the glider -->
+        <svg id="glider3" class="glider" width="100px" height="100px" viewBox="0 0 4 4" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="1" height="1" fill="green"/>
+            <rect x="2" y="3" width="1" height="1" fill="lightgreen"/>
+            <rect x="2" y="1" width="1" height="1" fill="green"/>
+            <rect x="3" y="1" width="1" height="1" fill="lightgreen"/>
+            <rect x="3" y="2" width="1" height="1" fill="green"/>
+        </svg>
+        <!-- State 4 of the glider -->
+        <svg id="glider4" class="glider" width="100px" height="100px" viewBox="0 0 4 4" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="2" width="1" height="1" fill="lightgreen"/>
+            <rect x="2" y="0" width="1" height="1" fill="lightgreen"/>
+            <rect x="2" y="1" width="1" height="1" fill="green"/>
+            <rect x="3" y="1" width="1" height="1" fill="green"/>
+            <rect x="3" y="2" width="1" height="1" fill="green"/>
+        </svg>
     </div>
 </body>
 </html>

@@ -5,15 +5,29 @@
     height: 100vh; /* Full viewport height */
 }
 
-svg {
-    animation: glide 2s infinite;
+.glider {
+    position: absolute;
+    opacity: 0; /* Start invisible */
+    animation: glideSequence 4s infinite; /* Animate over 4 seconds, repeat infinitely */
 }
 
-@keyframes glide {
-    0%, 100% {
-        transform: translate(0, 0);
+@keyframes glideSequence {
+    0%, 25% {
+        opacity: 1; /* Fully visible for the first quarter of the animation */
     }
-    50% {
-        transform: translate(50px, -50px); /* Adjust translation values as needed */
+    26%, 100% {
+        opacity: 0; /* Invisible for the rest */
     }
+}
+
+#glider2 {
+    animation-delay: 1s; /* Delays the start of animation for the second SVG */
+}
+
+#glider3 {
+    animation-delay: 2s; /* Delays for the third SVG */
+}
+
+#glider4 {
+    animation-delay: 3s; /* Delays for the fourth SVG */
 }
