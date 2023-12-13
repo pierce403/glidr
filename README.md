@@ -1,2 +1,2 @@
 # glidr
-framework for project planning and org tracking
+framework for project planning and org management
