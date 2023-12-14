@@ -2,7 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh; /* Adjusted height */
+    width: 90vw; /* Adjusted width */
+    margin: 5vh auto; /* Centering the container */
+    overflow: hidden; /* Hide any overflow */
+    position: relative; /* Position relative for absolute positioning of children */
     animation: moveGlider 4s linear infinite; /* Animation for moving the container */
 }
 
