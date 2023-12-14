@@ -13,10 +13,10 @@
 }
 
 @keyframes glideSequence {
-    0%, 25% {
-        opacity: 1; /* Fully visible for the first quarter of the animation */
+    0%, 24.9999% { 
+        opacity: 1; /* Fully visible for just before the first quarter of the animation */
     }
-    26%, 100% {
+    25%, 100% {
         opacity: 0; /* Invisible for the rest */
     }
 }
